@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+  <title>pambata</title>
+  
+</head>
+<body>
+  
+  <audio id="myAudio">
+    <source src="wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <h2 style="letter-spacing: 3px;"><span><i class="fa fa-trophy" aria-hidden="true"></i></span>Pambata lang po ito</h2><h5 style="font-family: 'Times New Roman', Times, serif;">@JessieLei</h5>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Add</a></li>
+            <li><a href="subtract.html">Subtract</a></li>
+            <li><a href="multiply.html">Multiply</a></li>
+            <li><a href="divide.html">Divide</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="wrapper">
+      <div class="equation">
+        <h1  id="num1" style="color:#4968fe"></h1>
+        <h1 style="color: #fe4949">+</h1>
+        <h1  id="num2" style="color: #fec649">1</h1>
+        <h1  style="color: #8ffe49">=</h1>
+        <h1  style="color: gray">?</h1>
+      </div>
+      <div class="answer-options">
+        <div id="option1" class="options" style="background-color: #4968fe;">
+          <h1>1</h1>
+        </div>
+        <div id="option2" class="options" style="background-color: #fe4949;">
+          <h1>2</h1>
+        </div>
+        <div id="option3" class="options" style="background-color: #fec649;">
+          <h1>3</h1>
+        </div>
+      </div>
+  </div>
+
+  <script src="add.js"></script>
+  
+</body>
+</html>

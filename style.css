@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Luckiest Guy", cursive;
+  background-color: #e6e6ea;
+}
+
+header {
+  background: #495ffe;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  overflow: hidden;
+  background: #495ffe;
+  color: #fff;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav h2 {
+  font-size: 2rem;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  font-size: 1.3rem;
+  margin-top: 5px;
+  float: left;
+  padding: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.current a::after {
+  content: "-";
+  font-size: 4px;
+  background-color: white;
+  display: block;
+}
+
+.wrapper {
+  height: 84vh;
+  padding: 2vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.equation {
+  /* height: initial ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.2vw;
+  background: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 10px 0px 0;
+  border: 3vh solid #3c3b3a;
+}
+
+.equation h1 {
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options {
+  font-size: 5.2vw;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 1vh;
+  color: #fff;
+  transition: 2s;
+  border-radius: 5px;
+  height: calc( 80vh / 3);
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav h2 {
+    font-size: 1.5rem;
+    float: none;
+    text-align: center;
+  }
+
+  nav {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .equation {
+    margin: 0px;
+  }
+
+  .options {
+    height: calc( 40vh / 3);
+  }
+
+  .equation {
+    height: 60vh;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav h2 {
+    float: none;
+    text-align: center;
+  }
+
+  .equation h1 {
+    display: inline;
+    padding: 10px;
+  }
+
+  nav li {
+    font-size: 0.8rem;
+  }
+}
